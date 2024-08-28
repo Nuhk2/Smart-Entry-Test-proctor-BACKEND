@@ -1,0 +1,10 @@
+#Git Ignore files
+
+node_modules
+.env.example
+public\images\*
+.dccache
+.idea\
+.env
+package-lock.json
+logs/error.log
