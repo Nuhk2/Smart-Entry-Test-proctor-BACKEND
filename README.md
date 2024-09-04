@@ -1,5 +1,5 @@
 - ✅ Online Registration - Completed
-- ✅Automated Admit Card Generation - Started
+- ✅Automated Admit Card Generation - Completed
 - ❌ Entry Test Modules
 - ❌ Comprehensive Security Measures
 - ❌ Post Exam Report Analysis
