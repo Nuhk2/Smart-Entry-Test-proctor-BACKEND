@@ -1,8 +1,10 @@
 "use strict";
 const bodyParser = require("body-parser"),
-  // apiController = require('./api'),
+
+
   loginRoute = require("./auth"),
-  apiRoute = require("./api/index");
+  apiRoute = require("./api/index"),
+  userRoutes = require("./api/userRoutes");
 
 const init = (server) => {
   // ------- parse every request body to lowercase
@@ -38,6 +40,7 @@ const init = (server) => {
 
   server.use("/api", apiRoute);
   server.use("/auth", loginRoute);
+  server.use("/api/users", userRoutes);
 };
 
 module.exports = {
