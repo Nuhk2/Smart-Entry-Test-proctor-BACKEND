@@ -5,6 +5,7 @@ const bodyParser = require("body-parser"),
   loginRoute = require("./auth"),
   apiRoute = require("./api/index"),
   userRoutes = require("./api/userRoutes");
+  const chatbotRoutes = require('./api/chatbotRoutes');
 
 const init = (server) => {
   // ------- parse every request body to lowercase
@@ -41,6 +42,7 @@ const init = (server) => {
   server.use("/api", apiRoute);
   server.use("/auth", loginRoute);
   server.use("/api/users", userRoutes);
+  server.use('/api', chatbotRoutes);
 };
 
 module.exports = {
